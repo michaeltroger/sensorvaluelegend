@@ -1,6 +1,13 @@
 # Sensor Value Legend
-A Android library which provides a legend for the sensor values by providing the sensor type.
+An Android library which provides a legend for the sensor values by providing the sensor type.
 
+## Usage
+```
+final String[] legend = SensorValueLegend.getLegend(Sensor.TYPE_ACCELEROMETER);
+// legend contains -> legend[0] = "accX", legend[1] = "accY", legend[2] = "accZ"
+```
+
+## Setting up
 In your project's build gradle add the respository:
 ```
 allprojects {
