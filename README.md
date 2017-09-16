@@ -1,5 +1,5 @@
 # Sensor Value Legend
-An Android library which provides a legend for the sensor values by providing the sensor type.
+A simple Android library which provides a legend for the sensor values by providing the sensor type.
 
 ## Usage
 ```
