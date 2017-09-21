@@ -163,7 +163,7 @@ public class SensorValueLegend {
      * @return the units or or null if sensor type unknown
      */
     public static String[] getUnits(final int sensorType) {
-        final String[] legend = descriptionsShort.get(sensorType);
+        final String[] legend = units.get(sensorType);
         if (legend == null)  Log.e(TAG, "unknownSensorType:" + sensorType);
         return legend;
     }
