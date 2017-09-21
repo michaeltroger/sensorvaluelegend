@@ -104,7 +104,7 @@ public class SensorValueLegend {
         }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            descriptionsShort.append(Sensor.TYPE_POSE_6DOF, new String[]{"rotPoseX","rotPoseY","rotPoseZ","rotPoseCos","transX","transY","transZ","pose7","pose8","pose9","pose10","pose11","pose12","pose13","pose14"});
+            descriptionsShort.append(Sensor.TYPE_POSE_6DOF, new String[]{"rotPoseX","rotPoseY","rotPoseZ","rotPoseCos","transX","transY","transZ","deltaQuatX","deltaQuatY","deltaQuatZ","deltaQuatCos","deltaTransX","deltaTransY","deltaTransZ","seqNr"});
             descriptionsFull.append(Sensor.TYPE_POSE_6DOF, new String[]{"x*sin(θ/2)", "y*sin(θ/2)", "z*sin(θ/2)", "cos(θ/2)", "Translation x-axis from arbitrary origin", "Translation y-axis from arbitrary origin", "Translation z-axis from arbitrary origin", "Delta quaternion rotation x*sin(θ/2)", "Delta quaternion rotation y*sin(θ/2)", "Delta quaternion rotation z*sin(θ/2)", "Delta quaternion rotation cos(θ/2)", "Delta translation along x-axis", "Delta translation along y-axis", "Delta translation along z-axis", "Sequence number"});
             units.append(Sensor.TYPE_POSE_6DOF, new String[]{"", "", "", "", "", "", "", "", "", "", "", "", "", "", ""});
 
