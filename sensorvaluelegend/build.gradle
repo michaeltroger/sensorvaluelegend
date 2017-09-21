@@ -53,7 +53,7 @@ artifacts {
 }
 
 group = 'com.michaeltroger.sensorvaluelegend'
-version = '1.0.0'
+version = '1.0.1'
 
 Properties bintrayProperties = new Properties()
 bintrayProperties.load(project.rootProject.file('bintray.properties').newDataInputStream())
@@ -70,10 +70,10 @@ bintray {
         vcsUrl = 'https://github.com/michaeltroger/sensorvaluelegend.git'
         websiteUrl = 'https://github.com/michaeltroger/sensorvaluelegend'
         version {
-            name = '1.0.0'
+            name = '1.0.1'
             desc = 'Init'
             released = new Date()
-            vcsTag = '1.0.0'
+            vcsTag = '1.0.1'
         }
         publish = true
         publicDownloadNumbers = true
