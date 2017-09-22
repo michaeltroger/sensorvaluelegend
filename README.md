@@ -31,6 +31,6 @@ finally in your module's build.gradle reference the library:
 ```
 dependencies {
   // ...
-  compile 'com.michaeltroger.sensorvaluelegend:sensorvaluelegend:1.0.2'
+  compile 'com.michaeltroger.sensorvaluelegend:sensorvaluelegend:1.0.3'
 }
 ```

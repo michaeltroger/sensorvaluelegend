@@ -55,7 +55,7 @@ public class SensorValueLegend {
         descriptionsFull.append(Sensor.TYPE_LINEAR_ACCELERATION, new String[]{"Acceleration excluding gravity on x-axis", "Acceleration excluding gravity on y-axis", "Acceleration excluding gravity on z-axis"});
         units.append(Sensor.TYPE_LINEAR_ACCELERATION, new String[]{"m/s²", "m/s²", "m/s²"});
 
-        descriptionsShort.append(Sensor.TYPE_ROTATION_VECTOR, new String[]{"rotX", "rotY", "rotZ", "rotCos(θ/2)", "headingAccuracy"});
+        descriptionsShort.append(Sensor.TYPE_ROTATION_VECTOR, new String[]{"rotX", "rotY", "rotZ", "rotCos", "headAccur"});
         descriptionsFull.append(Sensor.TYPE_ROTATION_VECTOR, new String[]{"x*sin(θ/2)", "y*sin(θ/2)", "z*sin(θ/2)", "cos(θ/2)", "Estimated heading Accuracy"});
         units.append(Sensor.TYPE_ROTATION_VECTOR, new String[]{"", "", "", "", "rad"});
 
@@ -72,7 +72,7 @@ public class SensorValueLegend {
             descriptionsFull.append(Sensor.TYPE_MAGNETIC_FIELD_UNCALIBRATED, new String[]{"Magnetic field uncalibrated x-axis", "Magnetic field uncalibrated y-axis", "Magnetic field uncalibrated z-axis", "Iron bias estimated in x-axis", "Iron bias estimated in y-axis", "Iron bias estimated in z-axis"});
             units.append(Sensor.TYPE_MAGNETIC_FIELD_UNCALIBRATED, new String[]{"uT", "uT", "uT", "uT", "uT", "uT"});
 
-            descriptionsShort.append(Sensor.TYPE_GAME_ROTATION_VECTOR, new String[]{"rotNoGeomagX", "rotNoGeomagY", "rotNoGeomagZ", "rotNoGeomogCos(θ/2)"});
+            descriptionsShort.append(Sensor.TYPE_GAME_ROTATION_VECTOR, new String[]{"rotNoGeomagX", "rotNoGeomagY", "rotNoGeomagZ", "rotNoGeomogCos"});
             descriptionsFull.append(Sensor.TYPE_GAME_ROTATION_VECTOR, new String[]{"x*sin(θ/2) w/o geomagnetic field", "y*sin(θ/2) w/o geomagnetic field", "z*sin(θ/2) w/o geomagnetic field", "cos(θ/2) w/o geomagnetic field"});
             units.append(Sensor.TYPE_GAME_ROTATION_VECTOR, new String[]{"", "", "", ""});
 
@@ -94,7 +94,7 @@ public class SensorValueLegend {
             descriptionsFull.append(Sensor.TYPE_STEP_COUNTER, new String[]{"Steps detected since last reboot"});
             units.append(Sensor.TYPE_STEP_COUNTER, new String[]{""});
 
-            descriptionsShort.append(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR, new String[]{"rotGeomagX", "rotGeomagY", "rotGeomagZ", "rotGeomogCos(θ/2)"});
+            descriptionsShort.append(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR, new String[]{"rotGeomagX", "rotGeomagY", "rotGeomagZ", "rotGeomogCos"});
             descriptionsFull.append(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR, new String[]{"x*sin(θ/2) using magnetometer", "y*sin(θ/2) using magnetometer", "z*sin(θ/2) using magnetometer", "cos(θ/2) using magnetometer"});
             units.append(Sensor.TYPE_GEOMAGNETIC_ROTATION_VECTOR, new String[]{"", "", "", ""});
         }
