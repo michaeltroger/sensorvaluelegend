@@ -136,9 +136,9 @@ public class SensorValueLegend {
     private SensorValueLegend() {}
 
     /**
-     * Retrieve the short descriptions for the sensor's values
-     * @param sensorType the Sensor type
-     * @return the short descriptions or null if sensor type unknown
+     * Retrieve the short descriptions for the {@link Sensor}'s values
+     * @param sensorType the {@link Sensor} type
+     * @return the short descriptions or null if {@link Sensor} type unknown
      */
     public static String[] getDescriptionsShort(final int sensorType) {
         final String[] legend = descriptionsShort.get(sensorType);
@@ -147,9 +147,9 @@ public class SensorValueLegend {
     }
 
     /**
-     * Retrieve the full descriptions for the sensor's values
-     * @param sensorType the Sensor type
-     * @return the full descriptions or or null if sensor type unknown
+     * Retrieve the full descriptions for the {@link Sensor}'s values
+     * @param sensorType the {@link Sensor} type
+     * @return the full descriptions or null if {@link Sensor} type unknown
      */
     public static String[] getDescriptionsFull(final int sensorType) {
         final String[] legend = descriptionsFull.get(sensorType);
@@ -158,9 +158,9 @@ public class SensorValueLegend {
     }
 
     /**
-     * Retrieve the units for the sensor's values
-     * @param sensorType the Sensor type
-     * @return the units or or null if sensor type unknown
+     * Retrieve the units for the {@link Sensor}'s values
+     * @param sensorType the {@link Sensor} type
+     * @return the units or null if {@link Sensor} type unknown
      */
     public static String[] getUnits(final int sensorType) {
         final String[] legend = units.get(sensorType);
