@@ -6,7 +6,7 @@ A simple Android library which provides a legend for the sensor values by provid
 String[] shortDescriptions = SensorValueLegend.getDescriptionsShort(Sensor.TYPE_ACCELEROMETER);
 // shortDescriptions contains -> [0] = "accX", [1] = "accY", [2] = "accZ"
 
-String[] fullDescriptions = SensorValueLegend.getDescriptionsShort(Sensor.TYPE_ACCELEROMETER);
+String[] fullDescriptions = SensorValueLegend.getDescriptionsFull(Sensor.TYPE_ACCELEROMETER);
 // fullDescriptions contains -> [0] = "Acceleration including gravity on x-axis", [1] = "Acceleration including gravity on y-axis", [2] = "Acceleration including gravity on z-axis"
 
 String[] units = SensorValueLegend.getUnits(Sensor.TYPE_ACCELEROMETER);
