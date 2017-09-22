@@ -2,6 +2,8 @@ package com.michaeltroger.sensorvaluelegend;
 
 import android.hardware.Sensor;
 import android.os.Build;
+import android.support.annotation.IntRange;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.util.SparseArray;
 
@@ -140,7 +142,8 @@ public class SensorValueLegend {
      * @param sensorType the {@link Sensor} type
      * @return the short descriptions or null if {@link Sensor} type unknown
      */
-    public static String[] getDescriptionsShort(final int sensorType) {
+    @Nullable
+    public static String[] getDescriptionsShort(@IntRange(from=1,to=35) final int sensorType) {
         final String[] legend = descriptionsShort.get(sensorType);
         if (legend == null)  Log.e(TAG, "unknownSensorType:" + sensorType);
         return legend;
@@ -151,7 +154,8 @@ public class SensorValueLegend {
      * @param sensorType the {@link Sensor} type
      * @return the full descriptions or null if {@link Sensor} type unknown
      */
-    public static String[] getDescriptionsFull(final int sensorType) {
+    @Nullable
+    public static String[] getDescriptionsFull(@IntRange(from=1,to=35) final int sensorType) {
         final String[] legend = descriptionsFull.get(sensorType);
         if (legend == null)  Log.e(TAG, "unknownSensorType:" + sensorType);
         return legend;
@@ -162,7 +166,8 @@ public class SensorValueLegend {
      * @param sensorType the {@link Sensor} type
      * @return the units or null if {@link Sensor} type unknown
      */
-    public static String[] getUnits(final int sensorType) {
+    @Nullable
+    public static String[] getUnits(@IntRange(from=1,to=35) final int sensorType) {
         final String[] legend = units.get(sensorType);
         if (legend == null)  Log.e(TAG, "unknownSensorType:" + sensorType);
         return legend;
