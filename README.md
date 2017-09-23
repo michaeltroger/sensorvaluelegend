@@ -14,23 +14,11 @@ String[] units = SensorValueLegend.getUnits(Sensor.TYPE_ACCELEROMETER);
 ```
 
 ## Setting up
-In your project's build gradle add the respository:
-```
-allprojects {
-    repositories {
-        // ...
-        maven {
-            url 'https://dl.bintray.com/michaeltroger/android'
-        }
-        
-    }
-}
-```
-
-finally in your module's build.gradle reference the library:
+In your module's build.gradle reference the library:
 ```
 dependencies {
   // ...
   compile 'com.michaeltroger.sensorvaluelegend:sensorvaluelegend:1.0.3'
 }
 ```
+That's all!
